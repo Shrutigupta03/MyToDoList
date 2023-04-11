@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '~ngx-toastr/toastr';
+@import '~bootswatch/dist/yeti/bootstrap.min.css';
+@import '~font-awesome/css/font-awesome.css';
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background-color: rgba(108, 178, 222, 0.231);
+}

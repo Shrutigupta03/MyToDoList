@@ -1,0 +1,21 @@
+<div class="card shadow" *ngIf="viewList">
+    <h4 class="card-header" style="background-color:  #4d8baaa3; margin-top: 0px; padding: 15px 20px;">My Todo List</h4>
+    <div class="card-body" style="padding: 20px">
+        <ul class="list-group" *ngFor="let todo of todoService.todoList">
+
+            <app-todo [todoInput]="todo"></app-todo>
+
+        </ul>
+    </div>
+</div>
+
+<div class="card shadow" *ngIf="!viewList">
+    <h5 class="card-header" style="background-color:  #4d8baaa3; margin-top: 0px; padding: 15px 20px;">My Todo List</h5>
+    <div class="card-body" style="padding: 20px">
+        <ul class="list-group" *ngFor="let todo of todoService.fav">
+
+            <app-todo [todoInput]="todo"></app-todo>
+
+        </ul>
+    </div>
+</div>

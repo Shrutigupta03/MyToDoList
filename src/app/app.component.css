@@ -1,0 +1,19 @@
+.navbar span{
+    margin: 0px 20px;
+}
+.navbar div{
+    margin: 0px 2px;
+}
+.navbar a{
+    margin: 0px 10px;
+}
+.navbar-expand-lg{
+    justify-content: space-between;
+}
+.navbar{
+    background-color: #4d8baa;
+}
+h5{
+    margin-top: 0px;
+    
+}

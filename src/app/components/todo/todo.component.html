@@ -1,0 +1,11 @@
+<li class="list-group-item" style="background-color: rgba(219, 241, 250, 0.749);">
+    <div class="form-check d-inline">
+        <input type="checkbox" class="form-check-input" id="complete" style="height: 13px; width: 13px;" (change)="onChange()">
+        <label for="complete" class="form-check-label lead" style="margin-bottom: 0px;">{{todoInput.title}}</label>
+    </div>
+    <div class="float-right">
+        <span class="mx-3" style="font-size: 13px;">{{todoInput.date | date}}</span>
+        <i class="fa fa-heart mx-3 btn" (click)='isFavorite()' [ngClass]="todoInput.isFavorite? 'text-danger' : '' "></i>
+        <button class="btn btn-outline-danger btn-sm mx-3" style="border-radius: 5px; width: 40px; height: 30px;" (click)="deleteTodo(todoInput)">x</button>
+    </div>
+</li>
