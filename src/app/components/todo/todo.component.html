@@ -6,6 +6,6 @@
     <div class="float-right">
         <span class="mx-3" style="font-size: 13px;">{{todoInput.date | date}}</span>
         <i class="fa fa-heart mx-3 btn" (click)='isFavorite()' [ngClass]="todoInput.isFavorite? 'text-danger' : '' "></i>
-        <button class="btn btn-outline-danger btn-sm mx-3" style="border-radius: 5px; width: 40px; height: 30px;" (click)="deleteTodo(todoInput)">x</button>
+        <button class="btn btn-outline-danger btn-sm mx-3" style="border-radius: 5px; width: 40px; height: 52px; font-size: 20px; padding: 10px 10px;" (click)="deleteTodo(todoInput)">x</button>
     </div>
 </li>
